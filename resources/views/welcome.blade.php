@@ -33,8 +33,7 @@
                 <div class="title m-b-md">
                     <span class="recycle">&#9851; ¿Cuánto Reciclo?</span>
                 </div>
-                <div class="mundo" style="background-image: url({{ asset('/svg/mundo.svg') }}); background-repeat: no-repeat; background-position: center; background-size: cover;">
-                </div>
+                <img clas="img-responsive" src="{{ asset('/svg/mundo.svg') }}" width="450" height="450">
             </div>
         </div>
     </body>
