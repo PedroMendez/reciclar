@@ -16,7 +16,7 @@ class CreatePlasticosTable extends Migration
         Schema::create('plasticos', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedInteger('user_id')->index();
-            $table->string('objeto');
+            $table->string('plastico');
             $table->integer('cantidad');
             $table->timestamps();
         });

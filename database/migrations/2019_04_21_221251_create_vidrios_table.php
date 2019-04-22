@@ -16,7 +16,7 @@ class CreateVidriosTable extends Migration
         Schema::create('vidrios', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedInteger('user_id')->index();
-            $table->string('objeto');
+            $table->string('vidrio');
             $table->integer('cantidad');
             $table->timestamps();
         });

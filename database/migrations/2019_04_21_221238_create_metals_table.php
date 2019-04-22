@@ -16,7 +16,7 @@ class CreateMetalsTable extends Migration
         Schema::create('metals', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedInteger('user_id')->index();
-            $table->string('objeto');
+            $table->string('metal');
             $table->integer('cantidad');
             $table->timestamps();
         });

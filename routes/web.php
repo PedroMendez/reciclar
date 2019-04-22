@@ -18,3 +18,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('/plastico', 'PlasticoController@store');
+
+Route::post('/carton', 'CartonController@store');
+
+Route::post('/metal', 'MetalController@store');
+
+Route::post('/papel', 'PapelController@store');
+
+Route::post('/vidrio', 'VidrioController@store');

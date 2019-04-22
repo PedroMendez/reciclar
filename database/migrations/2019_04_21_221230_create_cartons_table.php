@@ -16,7 +16,7 @@ class CreateCartonsTable extends Migration
         Schema::create('cartons', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedInteger('user_id')->index();
-            $table->string('objeto');
+            $table->string('carton');
             $table->integer('cantidad');
             $table->timestamps();
         });

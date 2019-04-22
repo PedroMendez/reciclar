@@ -6,6 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Carton extends Model
 {
+
+	protected $fillable = [
+    	'user_id', 'cantidad', 'carton'
+    ];
+
     public function user() 
     {
         return $this->belongsTo(User::class);
