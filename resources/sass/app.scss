@@ -158,4 +158,26 @@ span.recycle {
 .alert.alert-success {
     font-size: 1rem;
 }
+
+@keyframes hide-flash-message {
+    0% {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1, 1);
+        opacity: 1;    
+    }
+    100% {
+        transform: scale(0, 0);
+        opacity: 0;    
+    }
+}
+
+#flash-message {
+  height: 100%;
+  opacity: 1;
+  animation-name: hide-flash-message;
+  animation-duration: 4s;
+}
                    

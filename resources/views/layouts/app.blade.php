@@ -88,5 +88,5 @@
 setTimeout(function(){         
     let element = document.getElementById("flash-message");
     element.style.display = "none"; 
-}, 3000);
+}, 4000);
 </script>
