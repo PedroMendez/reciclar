@@ -70,10 +70,23 @@
                 </div>
             </div>
         </nav>
-
+        
         <main class="py-4">
+
+            <div class="container" id="flash-message">
+                @include('flash::message')
+            </div>
+
             @yield('content')
+            
         </main>
     </div>
 </body>
 </html>
+
+<script>
+setTimeout(function(){         
+    let element = document.getElementById("flash-message");
+    element.style.display = "none"; 
+}, 3000);
+</script>

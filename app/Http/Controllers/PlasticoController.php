@@ -23,6 +23,8 @@ class PlasticoController extends Controller
         
         Plastico::create(request(['user_id', 'cantidad', 'plastico']));
         
+        flash('Gracias por reciclar el plástico! El plástico tarda mil años en biodegradarse')->success();
+        
         return redirect('/home');
     } 
 }

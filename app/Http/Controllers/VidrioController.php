@@ -23,6 +23,8 @@ class VidrioController extends Controller
         
         Vidrio::create(request(['user_id', 'cantidad', 'vidrio']));
         
+        flash('Gracias por reciclar el vidrio! Algunos piensan que el vidrio no llega nunca a biodegradarse. Seguí salvando al mundo!')->success();        
+        
         return redirect('/home');
     } 
 }
