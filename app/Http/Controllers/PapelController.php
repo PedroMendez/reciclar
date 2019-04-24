@@ -23,7 +23,7 @@ class PapelController extends Controller
         
         Papel::create(request(['user_id', 'cantidad', 'papel']));
         
-        flash('Gracias por reciclar papel! El planeta va a ser un mejor lugar con tu ayuda')->success();        
+        flash('Gracias por reciclar papel! El planeta va a ser un mejor')->success();        
         
         return redirect('/home');
     } 

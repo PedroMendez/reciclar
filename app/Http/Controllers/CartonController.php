@@ -24,7 +24,7 @@ class CartonController extends Controller
         Carton::create(request(['user_id', 'cantidad', 'carton']));
 
 
-        flash('Gracias por reciclar cartón! El cartón tarda 3 meses en biodegradarse. Elegí envases de cartón y no envases de plástico')->success();
+        flash('Gracias por reciclar cartón! El cartón tarda 3 meses en biodegradarse')->success();
         
         return redirect('/home');
     } 

@@ -23,7 +23,7 @@ class MetalController extends Controller
         
         Metal::create(request(['user_id', 'cantidad', 'metal']));
 
-        flash('Gracias por reciclar metal! El metal puede tardar entre 200 y 500 años en biodegradarse')->success();
+        flash('Gracias por reciclar metal! El metal tarda entre 200 y 500 años en biodegradarse')->success();
         
         return redirect('/home');
     } 
