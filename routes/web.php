@@ -19,12 +19,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::post('/plastico', 'PlasticoController@store');
+Route::resource('/plastico', 'PlasticoController');
 
-Route::post('/carton', 'CartonController@store');
+Route::resource('/carton', 'CartonController');
 
-Route::post('/metal', 'MetalController@store');
+Route::resource('/metal', 'MetalController');
 
-Route::post('/papel', 'PapelController@store');
+Route::resource('/papel', 'PapelController');
 
-Route::post('/vidrio', 'VidrioController@store');
+Route::resource('/vidrio', 'VidrioController');

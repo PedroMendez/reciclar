@@ -46,12 +46,11 @@
                                         <div class="col-sm-9">
                                             <input class="form-control" list="plasticos" name="plastico" id="plastico" placeholder="¿Qué objeto(s) reciclaste?">
                                                 <datalist id="plasticos">
-                                                    <option value="tapitas de plástico">
-                                                    <option value="botellas de PET">
-                                                    <option value="envases de alimentos">
-                                                    <option value="sillas de plástico">
-                                                    <option value="mesa de plástico">
-                                                    <option value="bidones">
+                                                    <option value="tapas">
+                                                    <option value="botellas">
+                                                    <option value="envases">
+                                                    <option value="sillas">
+                                                    <option value="mesas">
                                                 </datalist>
                                         </div>
                                     </div>
@@ -111,7 +110,7 @@
                                             <div class="col-sm-9">
                                             <input class="form-control" list="cartones" name="carton" id="carton" placeholder="¿Qué objeto(s) reciclaste?">
                                             <datalist id="cartones">
-                                                <option value="formularios continuos">
+                                                <option value="formularios">
                                                 <option value="cajas">
                                                 <option value="envases">
                                                 <option value="carpetas">
@@ -176,12 +175,12 @@
                                         <datalist id="papeles">
                                             <option value="papel blanco">
                                             <option value="papel de color">
-                                            <option value="sobres de cualquier tipo de papel">
+                                            <option value="sobres">
                                             <option value="diarios">
                                             <option value="revistas">
-                                            <option value="formularios continuos">
+                                            <option value="formularios">
                                             <option value="biblioratos">
-                                            <option value="guías telefónicas">
+                                            <option value="guías">
                                         </datalist>
                                     </div>
                                 </div>
@@ -241,13 +240,13 @@
                                         <input class="form-control" list="metales" name="metal" id="metal" placeholder="¿Qué objeto(s) reciclaste?">
                                         <datalist id="metales">
                                             <option value="latas">
-                                            <option value="envases de acero">
+                                            <option value="envases">
                                             <option value="aluminio">
                                             <option value="hierro">
                                             <option value="plomo">
                                             <option value="cobre">
                                             <option value="bronce">
-                                            <option value="otros metales ferrosos">
+                                            <option value="otros">
                                         </datalist>
                                     </div>
                                 </div>
@@ -311,9 +310,7 @@
                                             <option value="botellas">
                                             <option value="frascos">
                                             <option value="envases">
-                                            <option value="vasos de vidrio verde">
-                                            <option value="vasos de vidrio blanco">
-                                            <option value="vasos de vidrio marrón">
+                                            <option value="vasos">
                                         </datalist>
                                     </div>
                                 </div>
