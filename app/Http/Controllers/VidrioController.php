@@ -20,11 +20,11 @@ class VidrioController extends Controller
             'cantidad' => ['required', 'min:1'],
             'vidrio' => ['required', 'min:3']
         ]);
-        
+
         $vidrio = Vidrio::create(request(['user_id', 'cantidad', 'vidrio']));
-        
-        flash('Gracias por reciclar el vidrio! El vidrio tarda millones de años en biodegradarse')->success();        
-        
+
+        flash('Gracias por reciclar el vidrio! El vidrio tarda millones de años en biodegradarse')->success();
+
         return redirect('/vidrio/' . $vidrio->id);
     }
     /**
@@ -37,12 +37,11 @@ class VidrioController extends Controller
     {
         $id = Auth::id();
 
-        if ($id == $vidrio->user_id)
-        {
+        if ($id == $vidrio->user_id) {
             $user = $vidrio->user;
 
             return view('vidrio.show', compact('vidrio', 'user'));
-        } 
+        }
         return abort(403);
-    }       
+    }
 }

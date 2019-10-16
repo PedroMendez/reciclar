@@ -3,7 +3,6 @@
 namespace App;
 
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
@@ -37,28 +36,28 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function carton() 
+    public function carton()
     {
         return $this->hasMany(Carton::class);
-    } 
+    }
 
-    public function metal() 
+    public function metal()
     {
         return $this->hasMany(Metal::class);
-    } 
+    }
 
-    public function papel() 
+    public function papel()
     {
         return $this->hasMany(Papel::class);
     }
 
-    public function plastico() 
+    public function plastico()
     {
         return $this->hasMany(Plastico::class);
-    }  
+    }
 
-    public function vidrio() 
+    public function vidrio()
     {
         return $this->hasMany(Vidrio::class);
-    }             
+    }
 }
